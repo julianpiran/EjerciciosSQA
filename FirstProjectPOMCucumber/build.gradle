@@ -1,0 +1,45 @@
+defaultTasks 'clean','test','aggregate'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.80")
+    }
+}
+
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'net.serenity-bdd:serenity-junit:2.0.80'
+    compile 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    compile 'net.serenity-bdd:serenity-core:2.0.80'
+    compile 'org.slf4j:slf4j-simple:1.7.7'
+    compile 'com.google.guava:guava:23.0'
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+    implementation group: 'org.apache.poi', name: 'poi', version: '5.0.0'
+    implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.0.0'
+}
+test.finalizedBy(aggregate)
+
+test {
+    ignoreFailures = true
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+gradle.startParameter.continueOnFailure = true
