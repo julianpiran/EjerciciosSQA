@@ -37,7 +37,8 @@ public class FillAllFieldsWithExcel implements Task {
                     Enter.theValue(Excel.getCellInformation(dataInjection.getFilePath(), dataInjection.getSheetName(),1,7)).into(FormsPage.USER_ADDRESS_INPUT),
                     Enter.theValue(Excel.getCellInformation(dataInjection.getFilePath(), dataInjection.getSheetName(),1,8)).into(FormsPage.SELECT_STATE_BUTTON).thenHit(Keys.ENTER),
                     Enter.theValue(Excel.getCellInformation(dataInjection.getFilePath(), dataInjection.getSheetName(),1,9)).into(FormsPage.SELECT_CITY_BUTTON).thenHit(Keys.ENTER),
-                    JavaScriptClick.on(FormsPage.SUBMIT_BUTTON)
+                    JavaScriptClick.on(FormsPage.SUBMIT_BUTTON),
+                    Scroll.to(FormsPage.USER_NAME_VALIDATION)
             );
         } catch (IOException e) {
             e.printStackTrace();

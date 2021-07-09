@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.JavaScriptClick;
+import net.serenitybdd.screenplay.actions.Scroll;
 import org.openqa.selenium.Keys;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -30,7 +31,8 @@ public class FillAllFieldsWithConfigFile implements Task {
                 Enter.theValue(SpecialMethods.properties.getProperty("currentAddress")).into(FormsPage.USER_ADDRESS_INPUT),
                 Enter.keyValues(SpecialMethods.properties.getProperty("state")).into(FormsPage.SELECT_STATE_BUTTON).thenHit(Keys.ENTER),
                 Enter.keyValues(SpecialMethods.properties.getProperty("city")).into(FormsPage.SELECT_CITY_BUTTON).thenHit(Keys.ENTER),
-                JavaScriptClick.on(FormsPage.SUBMIT_BUTTON)
+                JavaScriptClick.on(FormsPage.SUBMIT_BUTTON),
+                Scroll.to(FormsPage.USER_NAME_VALIDATION)
 
         );
     }

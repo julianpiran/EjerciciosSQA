@@ -20,6 +20,9 @@ public class DataInjection {
     private final String address;
     private final String filePath;
     private final String sheetName;
+    private static String ScreenshotDI;
+    private final String ScreenshotEx;
+    private final String ScreenshotCp;
 
     public DataInjection() {
 
@@ -35,6 +38,9 @@ public class DataInjection {
         this.address = faker.address().fullAddress();
         this.filePath = "resources/DataInjection.xlsx";
         this.sheetName = "DataInjection";
+        this.ScreenshotDI = "D:\\Cursos\\CursoSQA\\FirstProjectScreenplay\\ScreenshotDI.jpg";
+        this.ScreenshotEx = "D:\\Cursos\\CursoSQA\\FirstProjectScreenplay\\ScreenshotEx.jpg";
+        this.ScreenshotCp = "D:\\Cursos\\CursoSQA\\FirstProjectScreenplay\\ScreenshotCp.jpg";
     }
 
     public String getName() {
@@ -83,5 +89,17 @@ public class DataInjection {
 
     public String getSheetName() {
         return sheetName;
+    }
+
+    public String getScreenshotDI() {
+        return ScreenshotDI;
+    }
+
+    public String getScreenshotEx() {
+        return ScreenshotEx;
+    }
+
+    public String getScreenshotCp() {
+        return ScreenshotCp;
     }
 }

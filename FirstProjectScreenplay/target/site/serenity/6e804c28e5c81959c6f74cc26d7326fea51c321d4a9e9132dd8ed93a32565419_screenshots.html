@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="fontawesome-free-5.7.2-web/css/v4-shims.min.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" type="text/css" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.css">
+<link rel="stylesheet" type="text/css" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle"></span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="57de4437fac0351b30ce19e5d44de8bbe49c9ba7cd6b586e7a700353a7ae9725.html">Practice Fill Form</a></span>
+                > <span class="truncate-60"><a
+                    href="6e804c28e5c81959c6f74cc26d7326fea51c321d4a9e9132dd8ed93a32565419.html">Fill form with excel </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-07-2021 16:16</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Practice Fill Form </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="095fb70a5155b4b01be72b93f1b4c51cab27094796115f0e543dc2649da60779.html">Smoketest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Fill form with excel
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="fc5d9ac21ffd8b54e8c14dea77edaeb659d0de43e9ab05c6e484c338f1dae405.png" title=" Given that a web user want to practice fill a web form" width="1366"/>
+                <img src="fc5d9ac21ffd8b54e8c14dea77edaeb659d0de43e9ab05c6e484c338f1dae405.png" title=" Julian opens the https://www.demoqa.com/automation-practice-form" width="1366"/>
+                <img src="fc5d9ac21ffd8b54e8c14dea77edaeb659d0de43e9ab05c6e484c338f1dae405.png" title=" Given that a web user want to practice fill a web form (completed)" width="1366"/>
+                <img src="f48b87e914450ec11559bfed4fcc66bed0fbb4b12263b2b4a7b967b8c190b851.png" title=" When he fill all the requested field in the form with the information in excel" width="1366"/>
+                <img src="f48b87e914450ec11559bfed4fcc66bed0fbb4b12263b2b4a7b967b8c190b851.png" title=" Julian fill all fields with excel" width="1366"/>
+                <img src="f48b87e914450ec11559bfed4fcc66bed0fbb4b12263b2b4a7b967b8c190b851.png" title=" Julian clicks on " width="1366"/>
+                <img src="4226f3897072fa17860f833c05d5e23da8dbc5a636dd209bd146cdb2cd0a9ca0.png" title=" Julian clicks on  (completed)" width="1366"/>
+                <img src="4226f3897072fa17860f833c05d5e23da8dbc5a636dd209bd146cdb2cd0a9ca0.png" title=" Julian enters 'Julian' into " width="1366"/>
+                <img src="75db27bb39fe20d67a35e296eaadd556c59b97c730d89935befdfbdddf53eb2c.png" title=" Julian enters 'Julian' into  (completed)" width="1366"/>
+                <img src="75db27bb39fe20d67a35e296eaadd556c59b97c730d89935befdfbdddf53eb2c.png" title=" Julian enters 'Piranquive' into " width="1366"/>
+                <img src="7ee1cce70f422f59dc0aef37ae4b24c9ee203aaa956b59228b38b81ea22f7f19.png" title=" Julian enters 'Piranquive' into  (completed)" width="1366"/>
+                <img src="7ee1cce70f422f59dc0aef37ae4b24c9ee203aaa956b59228b38b81ea22f7f19.png" title=" Julian enters 'Julian.piiran@hotmail.com' into " width="1366"/>
+                <img src="7b1185b603ed3dccf937161c921ff227c150aa1ff6c65d8020839e6625d7de1e.png" title=" Julian enters 'Julian.piiran@hotmail.com' into  (completed)" width="1366"/>
+                <img src="7b1185b603ed3dccf937161c921ff227c150aa1ff6c65d8020839e6625d7de1e.png" title=" Julian clicks on " width="1366"/>
+                <img src="1fae6cc4d3e6415b85a4257f6594fb74acb97f75be7ca90355a170ba3c7e1d2c.png" title=" Julian clicks on  (completed)" width="1366"/>
+                <img src="1fae6cc4d3e6415b85a4257f6594fb74acb97f75be7ca90355a170ba3c7e1d2c.png" title=" Julian enters '3008930837' into " width="1366"/>
+                <img src="48c752e18bc8ec622f199961865261a9bb0d00129489ad3eeff71f97671b71de.png" title=" Julian enters '3008930837' into  (completed)" width="1366"/>
+                <img src="48c752e18bc8ec622f199961865261a9bb0d00129489ad3eeff71f97671b71de.png" title=" Julian enters CONTROL,'a' into " width="1366"/>
+                <img src="68432367715a5c2376ced95a451806f4463a4b06e442765ed1ae4414d9d06182.png" title=" Julian enters CONTROL,'a' into  (completed)" width="1366"/>
+                <img src="68432367715a5c2376ced95a451806f4463a4b06e442765ed1ae4414d9d06182.png" title=" Julian enters '07 July,2021' then hits [ENTER] into " width="1366"/>
+                <img src="d43c861d5ededb4816a15951ccce1ff7fec9c627af32ec28291e1eb3a23a012a.png" title=" Julian enters '07 July,2021' then hits [ENTER] into  (completed)" width="1366"/>
+                <img src="0f8c4f74312bbf2881bba081abf735548d1f40efcc9b254331ba595ec960084d.png" title=" Julian enters 'Maths' then hits [ENTER] into " width="1366"/>
+                <img src="58f385e82b74364f9b635dcb393cb990f7a94d3d4aedece9da620bb0c97c646e.png" title=" Julian enters 'Maths' then hits [ENTER] into  (completed)" width="1366"/>
+                <img src="58f385e82b74364f9b635dcb393cb990f7a94d3d4aedece9da620bb0c97c646e.png" title=" Julian clicks on " width="1366"/>
+                <img src="ebecc40d3dffb3f8f4fe897a1f749747ee0e70619de11c0305b0dcc39a8a1b13.png" title=" Julian clicks on  (completed)" width="1366"/>
+                <img src="ebecc40d3dffb3f8f4fe897a1f749747ee0e70619de11c0305b0dcc39a8a1b13.png" title=" Julian enters 'C:\Users\user\Pictures\Sin titulo.jpg' into " width="1366"/>
+                <img src="fa98a733899458e9a90c94fde3066952c6c25b0091cbeb9e921061b2e4b17021.png" title=" Julian enters 'C:\Users\user\Pictures\Sin titulo.jpg' into  (completed)" width="1366"/>
+                <img src="fa98a733899458e9a90c94fde3066952c6c25b0091cbeb9e921061b2e4b17021.png" title=" Julian enters 'Calle 20 #45-66' into " width="1366"/>
+                <img src="767f11f4013f424b520b482ed29190df9f1fc594f9a78850d0253d522089dcf7.png" title=" Julian enters 'Calle 20 #45-66' into  (completed)" width="1366"/>
+                <img src="767f11f4013f424b520b482ed29190df9f1fc594f9a78850d0253d522089dcf7.png" title=" Julian enters 'Rajasthan' then hits [ENTER] into " width="1366"/>
+                <img src="07187ed7eed3f14b3ac82e0c538ceb0cd608b32e37ac84c809c1cc47e01b0048.png" title=" Julian enters 'Rajasthan' then hits [ENTER] into  (completed)" width="1366"/>
+                <img src="07187ed7eed3f14b3ac82e0c538ceb0cd608b32e37ac84c809c1cc47e01b0048.png" title=" Julian enters 'Jaipur' then hits [ENTER] into " width="1366"/>
+                <img src="7e86c9d6ea72fd53a060d6d6b53bd97649d0465361715b85882e1b8be7fc7c1f.png" title=" Julian enters 'Jaipur' then hits [ENTER] into  (completed)" width="1366"/>
+                <img src="7e86c9d6ea72fd53a060d6d6b53bd97649d0465361715b85882e1b8be7fc7c1f.png" title=" Julian clicks on " width="1366"/>
+                <img src="1e4ab9dd2454c740e1b56bd94c5c7512c45f05a5b0d32d64f12247ef7a797369.png" title=" Julian clicks on  (completed)" width="1366"/>
+                <img src="1e4ab9dd2454c740e1b56bd94c5c7512c45f05a5b0d32d64f12247ef7a797369.png" title=" Julian fill all fields with excel (completed)" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" When he fill all the requested field in the form with the information in excel (completed)" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then he should see his excel data in the register." width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Julian excel validation" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('Julian Piranquive')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('Julian.piiran@hotmail.com')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('3008930837')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('07 July,2021')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('Maths')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('Calle 20 #45-66')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then get text form question should be equalToIgnoringCase('Rajasthan Jaipur')" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Julian excel validation (completed)" width="1366"/>
+                <img src="0cf64640d0fb68c1becf311da43d2b0f545e9e56e29699ea5f7f93e792924cff.png" title=" Then he should see his excel data in the register. (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.80</span>
+</div>
+</body>
+</html>

@@ -1,8 +1,10 @@
 package com.demoqa.tests.stepdefinitions;
 
 import com.demoqa.automation.interactions.OpenBrowser;
+import com.demoqa.automation.models.DataInjection;
 import com.demoqa.automation.tasks.*;
 import com.demoqa.automation.userinterfaces.FormsPage;
+import com.demoqa.automation.utils.ScreenshotClass;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,9 +15,13 @@ import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
+
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class FormStepDefinitions {
+
+    DataInjection dataInjection = new DataInjection();
 
     @Managed
     private WebDriver driver;
@@ -33,18 +39,21 @@ public class FormStepDefinitions {
     }
 
     @When("^he fill all the requested field in the form$")
-    public void heFillAllTheRequestedFieldInTheForm() {
+    public void heFillAllTheRequestedFieldInTheForm() throws IOException {
         theActorInTheSpotlight().attemptsTo(FillAllFields.successful());
+        ScreenshotClass.takeScreenshot(driver,dataInjection.getScreenshotDI());
     }
 
     @When("^he fill all the requested field in the form with the information in excel$")
-    public void heFillAllTheRequestedFieldInTheFormWithTheInformationInExcel() {
+    public void heFillAllTheRequestedFieldInTheFormWithTheInformationInExcel() throws IOException {
         theActorInTheSpotlight().attemptsTo(FillAllFieldsWithExcel.excelSuccessful());
+        ScreenshotClass.takeScreenshot(driver,dataInjection.getScreenshotEx());
     }
 
     @When("^he fill all the requested field in the form with the information in configProperties$")
-    public void heFillAllTheRequestedFieldInTheFormWithTheInformationInConfigProperties() {
+    public void heFillAllTheRequestedFieldInTheFormWithTheInformationInConfigProperties() throws IOException {
         theActorInTheSpotlight().attemptsTo(FillAllFieldsWithConfigFile.configSuccessful());
+        ScreenshotClass.takeScreenshot(driver,dataInjection.getScreenshotCp());
     }
 
     @Then("^he should see his data in the register\\.$")

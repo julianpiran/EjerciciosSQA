@@ -10,14 +10,17 @@ import net.serenitybdd.screenplay.actions.JavaScriptClick;
 import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class FillAllFields implements Task {
 
+    WebDriver driver;
     DataInjection dataInjection = new DataInjection();
     public static String name, lastName, email, phoneNumber, yearBD, monthBD, dayBD, subjects, currentAddress;
+
 
     public FillAllFields(){
     }
@@ -53,8 +56,8 @@ public class FillAllFields implements Task {
                 Enter.keyValues(Keys.ARROW_DOWN).into(FormsPage.SELECT_STATE_BUTTON).thenHit(Keys.ENTER),
                 JavaScriptClick.on(FormsPage.SELECT_CITY_BUTTON),
                 Enter.keyValues(Keys.ARROW_DOWN).into(FormsPage.SELECT_CITY_BUTTON).thenHit(Keys.ENTER),
-                JavaScriptClick.on(FormsPage.SUBMIT_BUTTON)
-
+                JavaScriptClick.on(FormsPage.SUBMIT_BUTTON),
+                Scroll.to(FormsPage.USER_NAME_VALIDATION)
         );
         name = dataInjection.getName();
         lastName = dataInjection.getLastName();
