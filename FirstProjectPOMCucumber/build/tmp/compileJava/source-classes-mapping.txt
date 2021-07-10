@@ -1,8 +1,8 @@
-com/demoqa/automations/steps/WebTableSteps.java
- com.demoqa.automations.steps.WebTableSteps
+com/demoqa/automations/models/DataInjection.java
+ com.demoqa.automations.models.DataInjection
 com/demoqa/automations/utils/Javasript.java
  com.demoqa.automations.utils.Javasript
 com/demoqa/automations/pageobjects/WebTablePage.java
  com.demoqa.automations.pageobjects.WebTablePage
-com/demoqa/automations/models/DataInjection.java
- com.demoqa.automations.models.DataInjection
+com/demoqa/automations/steps/WebTableSteps.java
+ com.demoqa.automations.steps.WebTableSteps
