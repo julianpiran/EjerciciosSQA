@@ -4,7 +4,6 @@ import com.demoqa.automations.models.DataInjection;
 import com.demoqa.automations.pageobjects.WebTablePage;
 import com.demoqa.automations.utils.Javasript;
 import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -32,14 +31,15 @@ public class WebTableSteps {
         webTablePage.sendText(webTablePage.salaryInput,dataInjection.getSalary());
         webTablePage.sendText(webTablePage.departmentInput,dataInjection.getDepartment());
         Javasript.clickJS(webTablePage.getDriver(),webTablePage.buttonSubmit);
-
-        Thread.sleep(2000);
     }
 
     @Step
     public void validationWebTable (){
-        WebDriverWait eWait = new WebDriverWait(webTablePage.getDriver(), 2);
-        //eWait.until(ExpectedConditions.textToBe(webTablePage.nameValidation,dataInjection.getName()));
-        webTablePage.validations(dataInjection.getName());
+        webTablePage.validations(webTablePage.nameValidation,dataInjection.getName());
+        webTablePage.validations(webTablePage.lastnameValidation,dataInjection.getLastName());
+        webTablePage.validations(webTablePage.ageValidation,dataInjection.getAge());
+        webTablePage.validations(webTablePage.emailValidation,dataInjection.getEmail());
+        webTablePage.validations(webTablePage.salaryValidation,dataInjection.getSalary());
+        webTablePage.validations(webTablePage.departmentValidation,dataInjection.getDepartment());
     }
 }

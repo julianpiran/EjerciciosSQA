@@ -59,7 +59,7 @@ public class Main {
         //File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(scrFile, new File("D:\\Cursos\\CursoSelenium\\screenshot.png"));
 
-        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(5)).takeScreenshot(driver);
         ImageIO.write(screenshot.getImage(), "jpg", new File("D:\\Cursos\\CursoSQA\\CursoSelenium\\screenshotFull.png"));
 
         //WebElement element = driver.findElement(By.xpath("//img [@src='images/logo.gif']"));

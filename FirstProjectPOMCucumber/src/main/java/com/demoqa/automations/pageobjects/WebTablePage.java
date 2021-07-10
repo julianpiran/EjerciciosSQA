@@ -21,7 +21,12 @@ public class WebTablePage extends PageObject {
     public By salaryInput = By.id("salary");
     public By departmentInput = By.id("department");
     public By buttonSubmit = By.id("submit");
-    public By nameValidation = By.xpath("//div[contains (text(),"+"'"+dataInjection.getName()+"'"+")]");
+    public By nameValidation = By.xpath("//div[@id='app']//div[4]/div/div[1]");
+    public By lastnameValidation = By.xpath("//div[@id='app']//div[4]/div/div[2]");
+    public By ageValidation = By.xpath("//div[@id='app']//div[4]/div/div[3]");
+    public By emailValidation = By.xpath("//div[@id='app']//div[4]/div/div[4]");
+    public By salaryValidation = By.xpath("//div[@id='app']//div[4]/div/div[5]");
+    public By departmentValidation = By.xpath("//div[@id='app']//div[4]/div/div[6]");
 
 
     public void sendText(By locator, String text){
@@ -31,7 +36,7 @@ public class WebTablePage extends PageObject {
         getDriver().findElement(locator).click();
     }
 
-    public void validations (String expectedName){
-        assertEquals(getDriver().findElement(nameValidation).getText(),expectedName);
+    public void validations (By locator, String expectedParameter){
+        assertEquals(getDriver().findElement(locator).getText(),expectedParameter);
     }
 }
